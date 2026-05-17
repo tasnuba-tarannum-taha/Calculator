@@ -9,5 +9,5 @@ This is a simple calculator made using Python.
 - Division
 
 ## How to run
-Run this command:
+Click on command:
 python Calculator.py

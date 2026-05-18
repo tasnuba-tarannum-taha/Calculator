@@ -2,12 +2,20 @@ a=float(input("First Number:"))
 b=float(input("Second Number:"))
 o=input("choose one(+,-,*,/): ")
 if o == "+":
-  print("Answer:",a+b)
+  result=a+b
 elif o == "-":
-  print("Answer:",a-b)
+  result=a-b
 elif o == "*":
-  print("Answer:",a*b)
+  result=a*b
 elif o == "/":
-  print("Answer",a/b)
+  if(b == 0):
+    result=print("Cannot divide by zero")
+  else:
+    result=a/b
 else:
-  print("Envalid")
+  print("Invalid")
+if 'result' in locals():
+  if result.is_integer():
+    print("Answer:",int(result))
+  else:
+    print("Answer:",result)
